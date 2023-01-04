@@ -4,7 +4,7 @@ access_key = "AKIAQYRHLJBB2NSAA7OA"
 secret_key = "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"
 }
 
-resource "aws_instance" "one" {
+resource "aws_instance" "development" {
 ami = "ami-0cca134ec43cf708f"
 instance_type = "t2.micro"
 tags = {
@@ -13,11 +13,11 @@ Environment = "dev"
 }
 }
 
-resource "aws_instance" "keys" {
+resource "aws_instance" "production" {
 ami = "ami-0cca134ec43cf708f"
 instance_type = "t2.micro"
 tags = {
-Name = "simmha"
+Name = "siha"
 Environment = "prod"
 }
 }
