@@ -13,7 +13,7 @@ Environment = "dev"
 }
 }
 
-resource "aws_instance" "two" {
+resource "aws_instance" "keys" {
 ami = "ami-0cca134ec43cf708f"
 instance_type = "t2.micro"
 tags = {
